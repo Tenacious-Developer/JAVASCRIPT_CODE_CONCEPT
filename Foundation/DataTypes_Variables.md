@@ -28,7 +28,39 @@ console.log(firstName);
 const pi  = 3.14; // cant update
 pi =3.15; // error
 ```
+#### Variable Scope:
+* Where do I have access this variable.
+	* Global Scope: used anywhere in the Program.
+	* Local Scope: used inside the function only.
+## I/O Function:
+### alert, prompt, confirm:
+### alert
+* It shows a message and waits for the user to press “OK”.
+``` javascript
+alert("Hello");
+```
+* The mini-window with the message is called a modal window. 
 
+### prompt
+* The function prompt accepts two arguments
+``` javascript
+result = prompt(title, [default]);
+```
+
+``` javascript
+let age = prompt('How old are you?', 100);
+
+alert(`You are ${age} years old!`); // You are 100 years old!
+```
+
+### confirm
+* The function confirm shows a modal window with a question and two buttons: OK and Cancel.
+* The result is true if OK is pressed and false otherwise.
+``` javascript
+let isBoss = confirm("Are you the boss?");
+
+alert( isBoss ); // true if OK is pressed
+```
 # Data types
 ### 7 primitive datatypes
 * primitive type that has only one value
