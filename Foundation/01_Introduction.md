@@ -12,7 +12,7 @@
 * JIT compiled (converts the JS code to byte code)
 * Interpreted
 
-## Javascript engine:
+## Javascript Engine:
 * The Javascript engine is a special programme which can execute JS code not only in the browser but also on the server side and basically any machine which has this engine.
 * This engine is also sometimes called as "Javascript virtual machine".
 * Parsing is the process of analyzing the source code, checking it for errors, and breaking it up into parts.
@@ -24,8 +24,7 @@
 ### JIT Compiler:
 * In modern engines, the interpreter starts reading the code line by line while the profiler watches for frequently used code and flags then passes is to the compiler to be optimized. In the end, the JavaScript engine takes the bytecode the interpreter outputs and mixes in the optimized code the compiler outputs and then gives that to the computer. This is called "Just in Time" or JIT Compiler.
 
-### JavaScript run time enviroment:
-
+### JavaScript run time enviroment: 
 ### Call Stack:
 * The call stack keeps track of where we are in the code, so we can run the program in order.
 * All the execution context is managed by the call stack
