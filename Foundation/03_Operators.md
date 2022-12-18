@@ -64,3 +64,7 @@ message = age >= 16 ? 'You can drive.' : 'You cannot drive.';
 
 console.log(message); // You can drive
 ```
+## Type Conversion:
+* conversion of one data type to another data type
+* Implicit type conversions - Automatic type conversion
+* Explicit type conversions - Manual type conversion
