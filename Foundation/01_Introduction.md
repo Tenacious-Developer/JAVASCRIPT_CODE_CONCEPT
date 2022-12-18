@@ -48,6 +48,9 @@ console.log(square2)     // 4
 var square4 = square(4);
 console.log(square4);    // 16
 ```
+
+<img src="https://user-images.githubusercontent.com/54023626/208282232-96a676e5-7b2a-4d58-bc33-12db4a60ec8a.png" width="50%" height="50%" />
+
 * how this js code work behind the scene
 * first there is global execution context is created
 * after the variable n, we come to variable square2 & square4 
@@ -61,6 +64,9 @@ console.log(square4);    // 16
 * If you allocate memory inside of a function, JavaScript will automatically remove it from the memory heap when the function is done being called. 
 * JavaScript completes garbage collection with a mark and sweep method.
 ### Execution of code in run time enviroment:
+
+<img src="https://user-images.githubusercontent.com/54023626/208282258-9e7331aa-0356-441b-8e18-7daefbce135d.png" width="50%" height="50%" />
+
 * JavaScript is a single threaded synchronous language.
 * one thing can be executed at a time in a specific order
 * Each browser has its own version of JavaScript Runtime with a set of Web API's, methods that developers can access from the window object
