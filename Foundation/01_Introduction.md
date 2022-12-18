@@ -13,6 +13,8 @@
 * Interpreted
 
 ## Javascript Engine:
+<img src="https://user-images.githubusercontent.com/54023626/208282222-dd77352d-c071-426c-8565-50f3688a8065.png" width="50%" height="50%" />
+
 * The Javascript engine is a special programme which can execute JS code not only in the browser but also on the server side and basically any machine which has this engine.
 * This engine is also sometimes called as "Javascript virtual machine".
 * Parsing is the process of analyzing the source code, checking it for errors, and breaking it up into parts.
