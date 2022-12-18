@@ -65,7 +65,7 @@ console.log(square4);    // 16
 * JavaScript completes garbage collection with a mark and sweep method.
 ### Execution of code in run time enviroment:
 
-<img src="https://user-images.githubusercontent.com/54023626/208282258-9e7331aa-0356-441b-8e18-7daefbce135d.png" width="50%" height="50%" />
+<img src="https://user-images.githubusercontent.com/54023626/208282258-9e7331aa-0356-441b-8e18-7daefbce135d.png" width="70%" height="50%" />
 
 * JavaScript is a single threaded synchronous language.
 * one thing can be executed at a time in a specific order
