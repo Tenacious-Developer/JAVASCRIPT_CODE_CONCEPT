@@ -1,6 +1,13 @@
-# Variables:
-* var & let used
-* for constant const used
+## Variables:
+* JavaScript has three kinds of variable declarations.
+* With the keyword var, can be used to declare both local and global variables, depending on the execution context.
+* The var statement declares a function-scoped or globally-scoped variable
+* var can be updated & re-declared.
+* With the keyword const or let, can be used to declare a block-scope local variable.
+* In var and let declarations, the initializer is optional. If a variable is declared without an initializer, it is assigned the value undefined.
+* let can be updated but not re-declared.
+* const declarations always need an initializer.
+* const can not updated and can not re-declared
 * loosely typed or a dynamically typed language
 
 ```javascript
@@ -28,40 +35,7 @@ console.log(firstName);
 const pi  = 3.14; // cant update
 pi =3.15; // error
 ```
-#### Variable Scope:
-* Where do I have access this variable.
-	* Global Scope: used anywhere in the Program.
-	* Local Scope: used inside the function only.
-## I/O Function:
-### alert, prompt, confirm:
-### alert
-* It shows a message and waits for the user to press “OK”.
-``` javascript
-alert("Hello");
-```
-* The mini-window with the message is called a modal window. 
-
-### prompt
-* The function prompt accepts two arguments
-``` javascript
-result = prompt(title, [default]);
-```
-
-``` javascript
-let age = prompt('How old are you?', 100);
-
-alert(`You are ${age} years old!`); // You are 100 years old!
-```
-
-### confirm
-* The function confirm shows a modal window with a question and two buttons: OK and Cancel.
-* The result is true if OK is pressed and false otherwise.
-``` javascript
-let isBoss = confirm("Are you the boss?");
-
-alert( isBoss ); // true if OK is pressed
-```
-# Data types
+## Data types
 ### 7 primitive datatypes
 * primitive type that has only one value
 * immutable
@@ -96,7 +70,7 @@ alert( isBoss ); // true if OK is pressed
 	* Representation: Number.MAX_VALUE Value: 1.7976931348623157e+308
 * The largest safe integer refers to the largest value that can be represented while largest value refers to the largest value that can be stored.
 * The JavaScript Number.MIN_SAFE_INTEGER constant represents the minimum safe integer in JavaScript.
-	* Representation:Number.MIN_SAFE_INTEGER Value:  -(253 - 1) or -9007199254740991.
+	* Representation:Number.MIN_SAFE_INTEGER Value:  -(2^53 - 1) or -9007199254740991.
 * Smallest value: It represents the smallest positive value in javascript.
 	* Representation:Number.MIN_VALUE:5e-324
 ### Null
@@ -116,10 +90,30 @@ console.log(typeof counter); // undefined
 console.log('a'/2); // NaN;
 ```
 ### Bigint
-* The bigint type represents the whole numbers that are larger than 253 – 1. 
+* The bigint type represents the whole numbers that are larger than 2^53 – 1. 
 ```javascript
 let pageView = 9007199254740991n;
 console.log(typeof(pageView)); // 'bigint'
+```
+### Boolean
+```
+function boolExample(flag){
+    if(flag1){
+        console.log('Hello world');
+    }else{
+        console.log('Hey there!');
+    }    
+}
+
+
+bool x = true;
+bool y = false;
+
+boolExample(x);
+//output: Hello world
+
+boolExample(y);
+//output: Hey there!
 ```
 ### The typeof operator
 * The typeof operator returns the type of the argument.
@@ -147,22 +141,6 @@ typeof alert // "function"  (3)
 * Math is a built-in object that provides mathematical operations
 * The result of typeof null is "object". That’s an officially recognized error in typeof,null is not an object. It is a special value with a separate type of its own
 * The result of typeof alert is "function", because alert is a function.
-# Operator:
-### Difference Between == and === in Javascript
-* The == and === operators are used to check the equality of two operands.
-* The != and !== operators are used to check the inequality of two operands.
-* == and != are loose equality operators, i.e. they perform type conversion on the operands before comparing.
-* === and !== are strict equality operator, i.e. they compare the operands without any type conversion, and return false (in case of === operator) even if the data types aren't same.
-
-### Ternary Operator
-```javascript
-let age = 18;
-let message;
-
-message = age >= 16 ? 'You can drive.' : 'You cannot drive.';
-
-console.log(message); // You can drive
-```
 
 ### Truthy and Falsy Values:
 * The following values get converted to false in JavaScript:
