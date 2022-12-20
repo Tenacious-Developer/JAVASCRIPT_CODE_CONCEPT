@@ -69,11 +69,6 @@ let aboutMe = `my name is ${firstName} and my age is ${age}`
 console.log(aboutMe);
 ```
 
-* Numeric conversion rules
-* undefined  -------------> 	NaN
-* null  -------------->  	0
-* true and false -----------> 	1 and 0
-
 
 
 ### String Methods
