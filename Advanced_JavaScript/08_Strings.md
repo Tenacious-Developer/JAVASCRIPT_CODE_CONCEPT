@@ -58,35 +58,6 @@ let lastName = "kumar";
 let fullName = firstName + " " + lastName;
 console.log(fullName);
 ```
-### Conversion:
-* convert number to string
-```javascript
-let age = 22;
-age = age + "";
-console.log(typeof(age)); // string
-age = String(age);
-console.log(typeof(age)); // string
-```
-* convert string to number
-```javascript
-let age1 = "22";
-age1 = +age1;
-console.log(typeof(age1)); // number
-age1 = Number(age1);
-console.log(typeof(age1)); // number
-
-let num = 24;
-num = num.toString(num);
-console.log(typeof(num)); // string
-```
-* evalutes data from left to right
-
-``` javascript
-let temp = 5+4+"mohit";
-console.log(temp); // 9mohit
-let temp = "mohit"+5+4
-console.log(temp); // mohit54
-```
 ``` javascript
 let age = 22;
 let firstName = "harshit"
@@ -104,35 +75,7 @@ console.log(aboutMe);
 * true and false -----------> 	1 and 0
 
 
-## Comparisons
-### String comparison
-* string is greater than another, JavaScript uses the so-called “dictionary” or “lexicographical” order.
-* strings are compared letter-by-letter.
-``` javascript
-alert( 'Z' > 'A' ); // true
-alert( 'Glow' > 'Glee' ); // true
-alert( 'Bee' > 'Be' ); // true
-```
 
-### Comparison of different types
-* When comparing values of different types, JavaScript converts the values to numbers.
-``` javascript
-alert( '2' > 1 ); // true, string '2' becomes a number 2
-alert( '01' == 1 ); // true, string '01' becomes a number 1
-```
-
-``` javascript
-alert( true == 1 ); // true
-alert( false == 0 ); // true
-```
-
-``` javascript
-let a = 0;
-alert( Boolean(a) ); // false
-
-let b = "0";
-alert( Boolean(b) ); // true
-```
 ### String Methods
 * **charAt()**	Finds the character present at a particular index in the string.
 * **concat()**	Concatenates the string arguments.
