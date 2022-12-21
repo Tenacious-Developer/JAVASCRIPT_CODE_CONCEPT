@@ -1,4 +1,4 @@
-# Functions:
+## Functions:
 * A block of code that performs specific task
 ### First Class Objects:
 * Functions have properties & methods just like other objects so it is also called first class object.
@@ -72,7 +72,6 @@ let res = sum(3,4)(4,3);
 console.log(res);// 7,1
 ```
 ```javascript
-```javascript
 function myFunc(){
     function hello(){
         return "hello world"
@@ -104,6 +103,7 @@ var b = function (parm1) {
 
 console.log(b()); // [Function (anonymous)]
 ```
+* All arguments in JavaScript functions are optional or loosely typed.
 ### First class Function:
 * the ability of function to be used as values and can be passed these as an arguments to another function and can be returned from the function is this ability is known as first class function
 * first class function is also known as first class citizen
