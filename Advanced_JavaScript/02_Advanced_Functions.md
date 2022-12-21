@@ -141,22 +141,4 @@ function y(x) {
 ```
 * map,filter & reduce are high order functionin js
 * map,filter & reduce are used in array
-## lexical enviroment:
-* Scope means where you can access a specific variable or a function in code
-* Scope is directly dependent on the lexical enviroment
-* wherever a execution context is created, a lexical enviroment is also created
-* lexical enviroment is the local memory along with the lexical enviroment of it's parent
-* lexical means inhirachical or sequence
-* whenever a execution context is created, you also get refrence to the lexical enviroment of it's parent
-``` javascript
-var b = 10;
-function a() {
-	c();
-	function c() {
-		console.log(b);
-	}
-}
-a();
-```
-* finding b in it's local enviroment of function c if not present then move it's parent local enviroment of function a() then move to it's parent enviroment global level 
-* scope chain is process of finding value in lexical enviroment
+
