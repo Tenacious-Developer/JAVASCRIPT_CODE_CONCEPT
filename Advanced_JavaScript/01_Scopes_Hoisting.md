@@ -1,3 +1,26 @@
+## window & this:
+* window is a global object which is created along with global execution context
+* when any js code is run a global object is created & a global execution context is created & a this keyword is created.
+* this points to the window object. i.e global object
+``` javascript
+var a = 10;
+function b() {
+	var x = 10;
+}
+
+// window.a = 10
+// this.a = 10
+// a = 10 by default window.a
+
+```
+
+* whatever the variable & function you created in the global scope, are attached to window object(global object) & can be access through 
+* window.var
+* this.var
+* var (by default window.var)
+
+* var x is not in the global scope so, this.x is not defined.
+
 ## Scope:
 * The scope is the current context of execution in which values and expressions are "visible" or can be referenced.
 * Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes, but not vice versa.
@@ -42,7 +65,7 @@ function prints()
 }
 console.log(local_variable);//this line will result in ReferenceError, as local_variable is not visible in this line
 ```
-## Block scope & Shadowing:
+### Block scope & Shadowing:
 * Block scope means that parameters and variables defined in a block and visible within the block.
 ```javascript
 {
@@ -124,7 +147,7 @@ const a = 20;
 	}
 }
 ```
-## lexical enviroment:
+### lexical enviroment:
 * Scope means where you can access a specific variable or a function in code
 * Scope is directly dependent on the lexical enviroment
 * wherever a execution context is created, a lexical enviroment is also created
@@ -141,44 +164,8 @@ function a() {
 }
 a();
 ```
-* finding b in it's local enviroment of function c if not present then move it's parent local enviroment of function a() then move to it's parent enviroment global level 
+* finding b in it's local enviroment of function c, if not present then move it's parent local enviroment function a() then move to it's parent enviroment global level 
 * scope chain is process of finding value in lexical enviroment
-
-
-
-
-
-
-
-
-
-
-
-## Difference Between 'var' and 'let':
-* The main difference between var and let is that the scope of the variable that is defined by let is limited to the block in which it is declared, whereas the variable declared using var has the global scope, i.e., can be used throughout the code.
-* If we declare a variable using var outside of any block (i.e., in the global scope), then the variable gets added to the window object, whereas variables declared with let will never get added to it.
-* We cannot declare the same variable multiple times if one of them is declared using let, whereas we can declare the same variable any number of times using var.
-* Variable hoisting can be done using var, but hoisting cannot be done using let.
-* Once a variable is declared or initialized, we can change its value anytime and anywhere within its scope. 
-
-
-
-
-## Hoisting:
-* Hoisting is a phenomenona in javascript, by which we can access the variable & function even before we initialized it
-``` javascript
-getName();  // vivek kumar
-console.log(x); // undefined
-
-var x = 7;
-function getName() {
-	console.log("vivek kumar")
-}
-```
-* so in the memory creation phase function getName() stores the whole function & var x stores the undefined.
-* functions are fully hoisted
-* var variable is hoisted & initliazed to undefined but let & const are hoisted but not initliazed to value
-* arow function & function expression behaves just like variable so it stores undefined first
 ``` javascript
 var x = 1;
 a();  // 10
@@ -196,28 +183,23 @@ function b() {
 	console.log(x)
 }
 ```
-## window & this:
-* window is a global object which is created along with global execution context
-* when any js code is run a global object is created & a global execution context is created & a this keyword is created.
+## Hoisting:
+* Hoisting is a phenomenona in javascript, by which we can access the variable & function even before we initialized it
 ``` javascript
-var a = 10;
-function b() {
-	var x = 10;
+getName();  // vivek kumar
+console.log(x); // undefined
+
+var x = 7;
+function getName() {
+	console.log("vivek kumar")
 }
-
-// window.a = 10
-// this.a = 10
-// a = 10 by default window.a
-
 ```
+* so in the memory creation phase function getName() stores the whole function & var x stores the undefined.
+* functions are fully hoisted
+* var variable is hoisted & initliazed to undefined but let & const are hoisted but not initliazed to value
+* arow function & function expression behaves just like variable so it stores undefined first
 
-* whatever the variable & function you created in the global scope, are attached to window object(global object) & can be access through 
-* window.var
-* this.var
-* var (by default window.var)
-
-* var x is not in the global scope so, this.x is not defined.
-## let & const:
+### let & const:
 * let & const declaration are hoisted
 ``` javascript
 console.log(a) // reference error 
@@ -258,6 +240,9 @@ let c = 30;      // c = 10
 * let & const both are in scope level
 * we can update let in same scope level. outside of the scope, it shows error
 
-
-
-
+## Difference Between 'var' and 'let':
+* The main difference between var and let is that the scope of the variable that is defined by let is limited to the block in which it is declared, whereas the variable declared using var has the global scope, i.e., can be used throughout the code.
+* If we declare a variable using var outside of any block (i.e., in the global scope), then the variable gets added to the window object, whereas variables declared with let will never get added to it.
+* We cannot declare the same variable multiple times if one of them is declared using let, whereas we can declare the same variable any number of times using var.
+* Variable hoisting can be done using var, but hoisting cannot be done using let.
+* Once a variable is declared or initialized, we can change its value anytime and anywhere within its scope. 
