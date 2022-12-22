@@ -164,8 +164,27 @@ function a() {
 }
 a();
 ```
+```
+Global ----> a:f(a)
+             b: 10
+	  
+a ---------> local 
+               c: f(c)
+	       this: window
+	     Global
+	       
+c ---------> local 
+               this: window
+	     closure(a)
+	     Global
+	       
+	       
+// this keyword is used in local because it's in lexical enviroment
+
+```
 * finding b in it's local enviroment of function c, if not present then move it's parent local enviroment function a() then move to it's parent enviroment global level 
 * scope chain is process of finding value in lexical enviroment
+
 ``` javascript
 var x = 1;
 a();  // 10
