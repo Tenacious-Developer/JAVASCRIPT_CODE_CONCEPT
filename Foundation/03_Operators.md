@@ -22,19 +22,29 @@
 ```
 ### Comparison Operators:
 ```
-==	-----> Equal to
-!= ----> not equal
-=== ----> equal value & type
-!== ----> not equal valu not equal type
+==	
+!= 
+=== 
+!== 
 < ----> less than
 > ----> greater than	
 ```
+### == (Abstract Equality Comparison)
+* Both checks the type
+* If Type(x) is the same as Type(y), then Return the result of performing Strict Equality Comparison x === y.
+* If Type(x) is not same as Type(y), then type conversion occurs & then comparison done
+### === (Strict Equality Comparison)
+* Both checks the type
+* If Type(x) is the same as Type(y), then compare the value
+* If Type(x) is not same as Type(y), then return false
 ### Logical Operators:
 ```
 &&	-----> Logical And
 || ----> Logical Or
 ! ------> logical not
 ```
+* In a AND operator, first operand false then return first operand, & if first operand true then return second operand.
+* In a OR operator, first operand false then return second operand, & if first operand true then return first operand.
 ### Bitwise Operators:
 ```
 & -----> Bitwise AND
