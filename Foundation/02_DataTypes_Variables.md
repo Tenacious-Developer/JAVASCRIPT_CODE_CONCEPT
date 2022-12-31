@@ -39,6 +39,7 @@ pi =3.15; // error
 ### 7 primitive datatypes
 * primitive type that has only one value
 * immutable
+* atomic in nature (don't depend upon any other type)
 * The variable assigned to a primitive type may be reassigned to a new value, but the original value can not be changed
 * Primitives are passed by value
 #### types
@@ -144,8 +145,8 @@ typeof alert // "function"  (3)
 
 ### Truthy and Falsy Values:
 * The following values get converted to false in JavaScript:
-* null ;
-* NaN ;
-* 0 ;
-* empty string ( "" or '' or `` );
-* undefined .
+* null 
+* NaN 
+* 0 (-0, +0)
+* empty string ( "" or '' or `` )
+* undefined.
