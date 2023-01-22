@@ -1,5 +1,12 @@
 ## Functions:
 * A block of code that performs specific task
+* DRY
+* y = f(x)
+```javascript
+y = f(x) {
+   // logic
+}
+```
 ### First Class Objects:
 * Functions have properties & methods just like other objects so it is also called first class object.
 * Functions are the callable object.
@@ -15,6 +22,23 @@ function add(x,y) {
 let sum = add(3,4);
 console.log(sum); // 7
 ```
+* The return statement is the last line of any function, which returns a value to the calling function, and ends function execution.
+* if you don't write return statement then it will return undefined.
+```javascript
+function add(x,y) {
+	let res = x+y;
+	console.log(res);
+}
+
+let sum = add(3,4);
+console.log(sum); 
+
+// 7
+// undefined
+```
+* console.log() is a function which prints the value and by default return undefined if return is omited
+* console is a object in which log is a function key
+
 ### Function Expression
 ```javascript
 const add = function (x,y){
